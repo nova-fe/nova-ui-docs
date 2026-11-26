@@ -57,6 +57,6 @@ demoPath: "/pages/nova-demo/index"
 
 - 组件库源码仓库：[github.com/nova-fe/nova-ui](https://github.com/nova-fe/nova-ui)
 - 文档站点源码仓库：[github.com/nova-fe/nova-ui-docs](https://github.com/nova-fe/nova-ui-docs)
-- 下一步阅读：[快速上手 →](/guide/quickstart.html)
+- 下一步阅读：<RouterLink to="/guide/quickstart.html">快速上手 →</RouterLink>
 
 </div>
