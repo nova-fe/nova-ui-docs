@@ -436,9 +436,27 @@ body {
   z-index: 35;
 }
 
-/* Hide VuePress anchor hashes on hover */
+/* Keep VuePress heading text visible while hiding hover # icon */
 .header-anchor {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.header-anchor::before {
+  display: none !important;
+}
+
+.nv-doc-card div[class*='language-'] .line-numbers {
   display: none;
+}
+
+.nv-doc-card div[class*='language-'].line-numbers-mode {
+  padding-left: 0;
+}
+
+.nv-doc-card div[class*='language-'] pre {
+  padding: 16px 18px;
+  margin: 0;
 }
 
 /* Responsive */

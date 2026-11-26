@@ -84,7 +84,7 @@
       <aside class="nv-simulator-wrap">
         <div class="nv-simulator">
           <iframe
-            :key="iframeKey"
+            :key="`${iframeKey}-${currentDemoHash}`"
             class="nv-simulator__frame"
             :src="simulatorUrl"
             title="Nova UI 实时预览"
