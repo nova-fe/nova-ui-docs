@@ -1,5 +1,7 @@
 # Nova UI Docs
 
+> 🌐 **在线文档地址**：[https://nova-fe.github.io/nova-ui-docs/](https://nova-fe.github.io/nova-ui-docs/)
+
 [Nova UI](https://github.com/nova-fe/nova-ui) 官方组件库文档站点，基于 **VuePress 2 + Vite** 构建，参考 Vant 4 三栏式文档布局，右侧内置真实可交互的移动端组件实时预览模拟器。
 
 ## 本地开发
