@@ -40,38 +40,38 @@ demoPath: "/pages/nova-demo/business?comp=card&title=Card%20%E5%95%86%E5%93%81%E
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `thumb` | `string` | `''` |
-| `title` | `string` | `''` |
-| `desc` | `string` | `''` |
-| `tag` | `string` | `''` |
-| `num` | `Numeric` | `''` |
-| `price` | `Numeric` | `''` |
-| `origin-price` | `Numeric` | `''` |
-| `currency` | `string` | `'¥'` |
-| `centered` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `thumb` | 商品左侧缩略图地址 | `string` | `''` |
+| `title` | 标题文案 | `string` | `''` |
+| `desc` | 商品描述信息 | `string` | `''` |
+| `tag` | 图片左上角角标文字 | `string` | `''` |
+| `num` | 商品数量 | `Numeric` | `''` |
+| `price` | 价格数值（SubmitBar 单位为分，Card 为展示文本） | `Numeric` | `''` |
+| `origin-price` | 商品划线原价 | `Numeric` | `''` |
+| `currency` | 货币符号（默认 ¥） | `string` | `'¥'` |
+| `centered` | 内容是否垂直居中 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click-thumb` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click-thumb` | 点击商品缩略图时触发 | `event: unknown` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `thumb` | 自定义 `thumb` 区域内容 |
-| `title` | 自定义 `title` 区域内容 |
-| `desc` | 自定义 `desc` 区域内容 |
-| `tags` | 自定义 `tags` 区域内容 |
-| `price` | 自定义 `price` 区域内容 |
-| `origin-price` | 自定义 `origin-price` 区域内容 |
-| `num` | 自定义 `num` 区域内容 |
-| `bottom` | 自定义 `bottom` 区域内容 |
-| `footer` | 自定义 `footer` 区域内容 |
+| `thumb` | 自定义商品左侧缩略图区域 |
+| `title` | 自定义标题区域内容 |
+| `desc` | 自定义描述信息区域 |
+| `tags` | 自定义商品卡片标签区域 |
+| `price` | 自定义商品价格区域 |
+| `origin-price` | 自定义商品划线原价区域 |
+| `num` | 自定义商品数量区域 |
+| `bottom` | 自定义商品卡片底部内容 |
+| `footer` | 自定义卡片底部操作栏内容 |
 
 </div>

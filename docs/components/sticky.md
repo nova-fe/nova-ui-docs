@@ -33,14 +33,14 @@ demoPath: "/pages/nova-demo/display?comp=sticky&title=Sticky%20%E7%B2%98%E6%80%A
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `offset-top` | `Numeric` | `0` |
-| `offset-bottom` | `Numeric` | `0` |
-| `z-index` | `number` | `99` |
-| `position` | `'top' \| 'bottom'` | `'top'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `offset-top` | 吸顶时与屏幕顶部的距离（单位 px） | `Numeric` | `0` |
+| `offset-bottom` | 吸底时与屏幕底部的距离（单位 px） | `Numeric` | `0` |
+| `z-index` | 组件层级 z-index | `number` | `99` |
+| `position` | 弹出或定位位置 | `'top' \| 'bottom'` | `'top'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 

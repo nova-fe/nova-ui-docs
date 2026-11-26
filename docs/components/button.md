@@ -44,32 +44,32 @@ demoPath: "/pages/nova-demo/basic?comp=button&title=Button%20%E6%8C%89%E9%92%AE"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `type` | `NvButtonType` | `'default'` |
-| `size` | `NvButtonSize` | `'normal'` |
-| `text` | `string` | `''` |
-| `color` | `string` | `''` |
-| `icon` | `string` | `''` |
-| `icon-position` | `'left' \| 'right'` | `'left'` |
-| `plain` | `boolean` | `false` |
-| `hairline` | `boolean` | `false` |
-| `square` | `boolean` | `false` |
-| `round` | `boolean` | `false` |
-| `block` | `boolean` | `false` |
-| `disabled` | `boolean` | `false` |
-| `loading` | `boolean` | `false` |
-| `loading-text` | `string` | `''` |
-| `loading-size` | `Numeric` | `16` |
-| `custom-class` | `string` | `''` |
-| `text-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `type` | 按钮类型，可选值为 primary / success / warning / danger / default | `NvButtonType` | `'default'` |
+| `size` | 按钮尺寸，可选值为 large / normal / small / mini | `NvButtonSize` | `'normal'` |
+| `text` | 按钮文字（等价于默认插槽） | `string` | `''` |
+| `color` | 按钮颜色（支持单色与 linear-gradient 渐变色） | `string` | `''` |
+| `icon` | 图标名称或图片链接 | `string` | `''` |
+| `icon-position` | 图标相对于文字的位置，可选值为 left / right | `'left' \| 'right'` | `'left'` |
+| `plain` | 是否为朴素（描边镂空）样式 | `boolean` | `false` |
+| `hairline` | 是否使用 0.5px 细边框 | `boolean` | `false` |
+| `square` | 是否为方形样式 | `boolean` | `false` |
+| `round` | 是否为圆角样式 | `boolean` | `false` |
+| `block` | 是否为块级元素（宽度 100%） | `boolean` | `false` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `loading` | 是否显示为加载状态 | `boolean` | `false` |
+| `loading-text` | 加载过程中的提示文字 | `string` | `''` |
+| `loading-size` | 加载图标尺寸 | `Numeric` | `16` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `text-class` | 按钮文字自定义类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 

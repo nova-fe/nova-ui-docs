@@ -34,20 +34,20 @@ demoPath: "/pages/nova-demo/display?comp=empty&title=Empty%20%E7%A9%BA%E7%8A%B6%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `image` | `'default' \| 'error' \| 'network' \| 'search' \| string` | `'default'` |
-| `image-size` | `Numeric \| [Numeric, Numeric]` | `120` |
-| `description` | `string` | `''` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `image` | 空状态图片类型或自定义图片地址（支持 default / error / network / search） | `'default' \| 'error' \| 'network' \| 'search' \| string` | `'default'` |
+| `image-size` | 图片尺寸 | `Numeric \| [Numeric, Numeric]` | `120` |
+| `description` | 辅助描述文字 | `string` | `''` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `image` | 自定义 `image` 区域内容 |
-| `description` | 自定义 `description` 区域内容 |
+| `image` | 自定义空状态图片区域 |
+| `description` | 自定义辅助描述内容 |
 | `default` | 默认内容插槽 |
 
 </div>

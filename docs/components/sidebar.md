@@ -41,18 +41,18 @@ demoPath: "/pages/nova-demo/navigation?comp=sidebar&title=Sidebar%20%E4%BE%A7%E8
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `Numeric` | `0` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `Numeric` | `0` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `index: number` |
-| `change` | `index: number` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `index: number` |
+| `change` | 绑定值或选中项发生变化时触发 | `index: number` |
 
 ### Slots
 
@@ -68,26 +68,26 @@ demoPath: "/pages/nova-demo/navigation?comp=sidebar&title=Sidebar%20%E4%BE%A7%E8
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `title` | `string` | `''` |
-| `dot` | `boolean` | `false` |
-| `badge` | `Numeric` | `undefined` |
-| `disabled` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `title` | 标题文案 | `string` | `''` |
+| `dot` | 是否显示右上角小红点 | `boolean` | `false` |
+| `badge` | 图标右上角徽标内容 | `Numeric` | `undefined` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `index: number` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `index: number` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `title` | 自定义 `title` 区域内容 |
+| `title` | 自定义标题区域内容 |
 | `default` | 默认内容插槽 |
 
 </div>

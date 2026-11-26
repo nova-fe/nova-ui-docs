@@ -40,27 +40,27 @@ demoPath: "/pages/nova-demo/display?comp=tag&title=Tag%20%E6%A0%87%E7%AD%BE"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `type` | `NvTagType` | `'default'` |
-| `size` | `NvTagSize` | `'normal'` |
-| `text` | `string` | `''` |
-| `color` | `string` | `''` |
-| `text-color` | `string` | `''` |
-| `plain` | `boolean` | `false` |
-| `round` | `boolean` | `false` |
-| `mark` | `boolean` | `false` |
-| `closeable` | `boolean` | `false` |
-| `show` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `type` | 标签类型，可选值为 primary / success / warning / danger / default | `NvTagType` | `'default'` |
+| `size` | 标签大小，可选值为 large / medium / default | `NvTagSize` | `'normal'` |
+| `text` | 展示文字内容 | `string` | `''` |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `''` |
+| `text-color` | 文字颜色 | `string` | `''` |
+| `plain` | 是否为朴素（描边镂空）样式 | `boolean` | `false` |
+| `round` | 是否为圆角样式 | `boolean` | `false` |
+| `mark` | 是否为标记样式（右侧半圆角） | `boolean` | `false` |
+| `closeable` | 是否显示关闭图标 | `boolean` | `false` |
+| `show` | 是否显示组件（支持 v-model:show） | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
-| `close` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
+| `close` | 关闭组件或弹层时触发 | `event: unknown` |
 
 ### Slots
 

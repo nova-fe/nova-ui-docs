@@ -33,29 +33,29 @@ demoPath: "/pages/nova-demo/feedback?comp=floating-panel&title=FloatingPanel%20%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `height` | `number` | `0` |
-| `anchors` | `number[]` | `() =&gt; []` |
-| `duration` | `number` | `300` |
-| `content-draggable` | `boolean` | `true` |
-| `safe-area-inset-bottom` | `boolean` | `true` |
-| `z-index` | `number` | `999` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `height` | 组件高度 | `number` | `0` |
+| `anchors` | 自定义面板吸附高度锚点数组（单位 px） | `number[]` | `() =&gt; []` |
+| `duration` | 动画或展示持续时长 | `number` | `300` |
+| `content-draggable` | 面板内容区域是否允许拖拽 | `boolean` | `true` |
+| `safe-area-inset-bottom` | 是否开启底部安全区适配（iPhone X 等全面屏） | `boolean` | `true` |
+| `z-index` | 组件层级 z-index | `number` | `999` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:height` | `value: number` |
-| `height-change` | `detail: { height: number }` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:height` | 更新浮动面板当前高度（v-model:height） | `value: number` |
+| `height-change` | 浮动面板高度变化且吸附完成后触发 | `detail: { height: number }` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `header` | 自定义 `header` 区域内容 |
+| `header` | 自定义面板顶部拖拽头部区域 |
 | `default` | 默认内容插槽 |
 
 </div>

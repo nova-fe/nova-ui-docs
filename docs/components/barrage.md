@@ -38,16 +38,16 @@ demoPath: "/pages/nova-demo/feedback?comp=barrage&title=Barrage%20%E5%BC%B9%E5%B
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `NvBarrageItem[]` | `() =&gt; []` |
-| `auto-play` | `boolean` | `true` |
-| `rows` | `number` | `4` |
-| `top` | `number` | `10` |
-| `duration` | `number` | `4000` |
-| `delay` | `number` | `300` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `NvBarrageItem[]` | `() =&gt; []` |
+| `auto-play` | 是否自动播放弹幕 | `boolean` | `true` |
+| `rows` | 弹幕轨道行数 | `number` | `4` |
+| `top` | 弹幕区域距离顶部的初始偏移（单位 px） | `number` | `10` |
+| `duration` | 单条弹幕完整滚过屏幕的时长（单位 ms） | `number` | `4000` |
+| `delay` | 延迟时间 | `number` | `300` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 
@@ -57,6 +57,9 @@ demoPath: "/pages/nova-demo/feedback?comp=barrage&title=Barrage%20%E5%BC%B9%E5%B
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`play()`、`pause()`
+| 方法名 | 说明 |
+| --- | --- |
+| `play` | 开始/继续播放弹幕 |
+| `pause` | 暂停播放（弹幕滚动或倒计时） |
 
 </div>

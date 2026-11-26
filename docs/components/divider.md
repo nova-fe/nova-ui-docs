@@ -35,14 +35,14 @@ demoPath: "/pages/nova-demo/display?comp=divider&title=Divider%20%E5%88%86%E5%89
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `text` | `string` | `''` |
-| `dashed` | `boolean` | `false` |
-| `hairline` | `boolean` | `true` |
-| `content-position` | `'left' \| 'center' \| 'right'` | `'center'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `text` | 展示文字内容 | `string` | `''` |
+| `dashed` | 是否使用虚线样式 | `boolean` | `false` |
+| `hairline` | 是否使用 0.5px 细边框 | `boolean` | `true` |
+| `content-position` | 内容位置，可选值为 left / center / right | `'left' \| 'center' \| 'right'` | `'center'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 

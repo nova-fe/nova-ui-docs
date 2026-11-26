@@ -34,24 +34,24 @@ demoPath: "/pages/nova-demo/feedback?comp=floating-bubble&title=FloatingBubble%2
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `axis` | `NvFloatingBubbleAxis` | `'y'` |
-| `magnetic` | `NvFloatingBubbleMagnetic` | `''` |
-| `icon` | `string` | `''` |
-| `gap` | `number` | `24` |
-| `offset` | `NvFloatingBubbleOffset` | `undefined` |
-| `z-index` | `number` | `999` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `axis` | 拖拽移动方向限制，可选值为 x / y / xy / lock | `NvFloatingBubbleAxis` | `'y'` |
+| `magnetic` | 是否开启松手自动吸边方向，可选值为 x / y | `NvFloatingBubbleMagnetic` | `''` |
+| `icon` | 图标名称或图片链接 | `string` | `''` |
+| `gap` | 气泡与屏幕边缘的最小安全间距（单位 px） | `number` | `24` |
+| `offset` | 控制气泡初始位置坐标 { x, y }（支持 v-model:offset） | `NvFloatingBubbleOffset` | `undefined` |
+| `z-index` | 组件层级 z-index | `number` | `999` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:offset` | `offset: NvFloatingBubbleOffset` |
-| `offset-change` | `offset: NvFloatingBubbleOffset` |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:offset` | 更新气泡坐标位置（v-model:offset） | `offset: NvFloatingBubbleOffset` |
+| `offset-change` | 用户拖动浮动气泡改变位置后触发 | `offset: NvFloatingBubbleOffset` |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 

@@ -33,19 +33,19 @@ demoPath: "/pages/nova-demo/feedback?comp=overlay&title=Overlay%20%E9%81%AE%E7%B
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `show` | `boolean` | `false` |
-| `z-index` | `number` | `1000` |
-| `lock-scroll` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `show` | 是否显示组件（支持 v-model:show） | `boolean` | `false` |
+| `z-index` | 组件层级 z-index | `number` | `1000` |
+| `lock-scroll` | 是否锁定背景页面滚动 | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 

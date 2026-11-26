@@ -37,19 +37,19 @@ demoPath: "/pages/nova-demo/navigation?comp=grid&title=Grid%20%E5%AE%AB%E6%A0%BC
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `column-num` | `Numeric` | `4` |
-| `icon-size` | `Numeric` | `28` |
-| `gutter` | `Numeric` | `0` |
-| `border` | `boolean` | `true` |
-| `center` | `boolean` | `true` |
-| `square` | `boolean` | `false` |
-| `clickable` | `boolean` | `false` |
-| `direction` | `NvGridDirection` | `'vertical'` |
-| `reverse` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `column-num` | 每行展示的宫格列数 | `Numeric` | `4` |
+| `icon-size` | 图标大小 | `Numeric` | `28` |
+| `gutter` | 子元素之间的间距 | `Numeric` | `0` |
+| `border` | 是否显示边框 | `boolean` | `true` |
+| `center` | 是否使内容垂直居中 | `boolean` | `true` |
+| `square` | 是否为方形样式 | `boolean` | `false` |
+| `clickable` | 是否开启点击反馈效果 | `boolean` | `false` |
+| `direction` | 排列或弹出方向 | `NvGridDirection` | `'vertical'` |
+| `reverse` | 是否调换宫格图标与文字的上下顺序 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 
@@ -65,30 +65,30 @@ demoPath: "/pages/nova-demo/navigation?comp=grid&title=Grid%20%E5%AE%AB%E6%A0%BC
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `text` | `string` | `''` |
-| `icon` | `string` | `''` |
-| `icon-color` | `string` | `''` |
-| `dot` | `boolean` | `false` |
-| `badge` | `Numeric` | `undefined` |
-| `url` | `string` | `''` |
-| `link-type` | `'navigateTo' \| 'redirectTo' \| 'reLaunch' \| 'switchTab'` | `'navigateTo'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `text` | 展示文字内容 | `string` | `''` |
+| `icon` | 图标名称或图片链接 | `string` | `''` |
+| `icon-color` | 图标颜色 | `string` | `''` |
+| `dot` | 是否显示右上角小红点 | `boolean` | `false` |
+| `badge` | 图标右上角徽标内容 | `Numeric` | `undefined` |
+| `url` | 点击后跳转的页面路由地址 | `string` | `''` |
+| `link-type` | 页面路由跳转方式（navigateTo / redirectTo / switchTab / reLaunch） | `'navigateTo' \| 'redirectTo' \| 'reLaunch' \| 'switchTab'` | `'navigateTo'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
 | `default` | 默认内容插槽 |
-| `icon` | 自定义 `icon` 区域内容 |
-| `text` | 自定义 `text` 区域内容 |
+| `icon` | 自定义图标内容 |
+| `text` | 自定义宫格文字内容 |
 
 </div>

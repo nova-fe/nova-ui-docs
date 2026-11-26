@@ -34,29 +34,29 @@ demoPath: "/pages/nova-demo/form?comp=rate&title=Rate%20%E8%AF%84%E5%88%86"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `number` | `0` |
-| `count` | `number` | `5` |
-| `size` | `Numeric` | `20` |
-| `gutter` | `Numeric` | `4` |
-| `color` | `string` | `'#ee0a24'` |
-| `void-color` | `string` | `'#c8c9cc'` |
-| `disabled-color` | `string` | `'#c8c9cc'` |
-| `icon` | `string` | `'star'` |
-| `void-icon` | `string` | `'star-o'` |
-| `allow-half` | `boolean` | `false` |
-| `readonly` | `boolean` | `false` |
-| `disabled` | `boolean` | `false` |
-| `clearable` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `number` | `0` |
+| `count` | 图标总数量 | `number` | `5` |
+| `size` | 尺寸大小 | `Numeric` | `20` |
+| `gutter` | 子元素之间的间距 | `Numeric` | `4` |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `'#ee0a24'` |
+| `void-color` | 未选中状态图标颜色 | `string` | `'#c8c9cc'` |
+| `disabled-color` | 禁用状态下的颜色 | `string` | `'#c8c9cc'` |
+| `icon` | 图标名称或图片链接 | `string` | `'star'` |
+| `void-icon` | 未选中状态图标名称 | `string` | `'star-o'` |
+| `allow-half` | 是否允许半星选择 | `boolean` | `false` |
+| `readonly` | 是否为只读状态（不可编辑但保持正常展示样式） | `boolean` | `false` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `clearable` | 是否启用清除图标，点击可清空当前值 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `value: number` |
-| `change` | `value: number` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `value: number` |
+| `change` | 绑定值或选中项发生变化时触发 | `value: number` |
 
 </div>

@@ -43,22 +43,22 @@ demoPath: "/pages/nova-demo/basic?comp=icon&title=Icon%20%E5%9B%BE%E6%A0%87"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `name` | `string` | `必填` |
-| `dot` | `boolean` | `false` |
-| `badge` | `Numeric` | `undefined` |
-| `color` | `string` | `''` |
-| `size` | `Numeric` | `16` |
-| `class-prefix` | `string` | `''` |
-| `font-family` | `string` | `''` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `name` | 唯一标识符名称 | `string` | `必填` |
+| `dot` | 是否显示右上角小红点 | `boolean` | `false` |
+| `badge` | 图标右上角徽标内容 | `Numeric` | `undefined` |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `''` |
+| `size` | 尺寸大小 | `Numeric` | `16` |
+| `class-prefix` | 自定义图标类名前缀 | `string` | `''` |
+| `font-family` | 自定义图标字体名称 | `string` | `''` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 </div>

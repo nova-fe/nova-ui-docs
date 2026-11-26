@@ -19,28 +19,28 @@ demoPath: "/pages/nova-demo/feedback?comp=pull-refresh&title=PullRefresh%20%E4%B
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `boolean` | `false` |
-| `pulling-text` | `string` | `'下拉即可刷新...'` |
-| `loosing-text` | `string` | `'释放即可刷新...'` |
-| `loading-text` | `string` | `'加载中...'` |
-| `success-text` | `string` | `''` |
-| `success-duration` | `number` | `500` |
-| `head-height` | `Numeric` | `50` |
-| `pull-distance` | `Numeric` | `50` |
-| `animation-duration` | `number` | `300` |
-| `disabled` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `boolean` | `false` |
+| `pulling-text` | 下拉过程提示文案 | `string` | `'下拉即可刷新...'` |
+| `loosing-text` | 下拉释放过程提示文案 | `string` | `'释放即可刷新...'` |
+| `loading-text` | 加载过程中的提示文字 | `string` | `'加载中...'` |
+| `success-text` | 刷新成功后的提示文案 | `string` | `''` |
+| `success-duration` | 刷新成功提示展示时长（单位 ms） | `number` | `500` |
+| `head-height` | 顶部下拉提示区域高度（单位 px） | `Numeric` | `50` |
+| `pull-distance` | 触发下拉刷新的最小拖动距离（单位 px） | `Numeric` | `50` |
+| `animation-duration` | 下拉回弹动画时长（单位 ms） | `number` | `300` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `value: boolean` |
-| `refresh` | `-` |
-| `change` | `detail: { status: NvPullRefreshStatus; distance: number }` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `value: boolean` |
+| `refresh` | 下拉触发刷新时触发 | `-` |
+| `change` | 绑定值或选中项发生变化时触发 | `detail: { status: NvPullRefreshStatus; distance: number }` |
 
 ### Slots
 

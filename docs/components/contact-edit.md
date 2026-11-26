@@ -40,23 +40,23 @@ demoPath: "/pages/nova-demo/business?comp=contact-edit&title=ContactEdit%20%E8%8
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `contact-info` | `NvContactEditInfo` | `() =&gt; ({` |
-| `is-edit` | `boolean` | `-` |
-| `is-saving` | `boolean` | `-` |
-| `is-deleting` | `boolean` | `-` |
-| `show-set-default` | `boolean` | `-` |
-| `set-default-label` | `string` | `-` |
-| `custom-class` | `string` | `-` |
-| `custom-style` | `StyleInput` | `-` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `contact-info` | 联系人初始信息对象 | `NvContactEditInfo` | `() =&gt; ({` |
+| `is-edit` | 是否为编辑模式（为 true 时显示删除按钮） | `boolean` | `-` |
+| `is-saving` | 保存按钮是否处于加载状态 | `boolean` | `-` |
+| `is-deleting` | 删除按钮是否处于加载状态 | `boolean` | `-` |
+| `show-set-default` | 是否显示“设为默认”开关 | `boolean` | `-` |
+| `set-default-label` | “设为默认联系人”开关栏文案 | `string` | `-` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `-` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `-` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `save` | `info: NvContactEditResult` |
-| `delete` | `info: NvContactEditResult` |
-| `change-default` | `value: boolean` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `save` | 点击保存按钮时触发 | `info: NvContactEditResult` |
+| `delete` | 点击删除按钮或按键时触发 | `info: NvContactEditResult` |
+| `change-default` | 切换“设为默认”开关时触发 | `value: boolean` |
 
 </div>

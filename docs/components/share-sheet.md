@@ -33,35 +33,35 @@ demoPath: "/pages/nova-demo/feedback?comp=share-sheet&title=ShareSheet%20%E5%88%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `show` | `boolean` | `false` |
-| `options` | `NvShareSheetOption[] \| NvShareSheetOption[][]` | `() =&gt; []` |
-| `title` | `string` | `''` |
-| `cancel-text` | `string` | `'取消'` |
-| `description` | `string` | `''` |
-| `round` | `boolean` | `true` |
-| `overlay` | `boolean` | `true` |
-| `close-on-click-overlay` | `boolean` | `true` |
-| `safe-area-inset-bottom` | `boolean` | `true` |
-| `z-index` | `number` | `2000` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `show` | 是否显示组件（支持 v-model:show） | `boolean` | `false` |
+| `options` | 可选项数据源数组 | `NvShareSheetOption[] \| NvShareSheetOption[][]` | `() =&gt; []` |
+| `title` | 标题文案 | `string` | `''` |
+| `cancel-text` | 底部取消按钮文字，为空时不展示 | `string` | `'取消'` |
+| `description` | 辅助描述文字 | `string` | `''` |
+| `round` | 是否为圆角样式 | `boolean` | `true` |
+| `overlay` | 是否显示背景遮罩层 | `boolean` | `true` |
+| `close-on-click-overlay` | 点击遮罩层时是否自动关闭 | `boolean` | `true` |
+| `safe-area-inset-bottom` | 是否开启底部安全区适配（iPhone X 等全面屏） | `boolean` | `true` |
+| `z-index` | 组件层级 z-index | `number` | `2000` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:show` | `value: boolean` |
-| `select` | `option: NvShareSheetOption, index: number` |
-| `cancel` | `-` |
-| `close` | `-` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:show` | 更新显示状态（v-model:show） | `value: boolean` |
+| `select` | 选中某一项时触发 | `option: NvShareSheetOption, index: number` |
+| `cancel` | 点击取消按钮时触发 | `-` |
+| `close` | 关闭组件或弹层时触发 | `-` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `title` | 自定义 `title` 区域内容 |
-| `description` | 自定义 `description` 区域内容 |
+| `title` | 自定义标题区域内容 |
+| `description` | 自定义辅助描述内容 |
 
 </div>

@@ -39,20 +39,20 @@ demoPath: "/pages/nova-demo/display?comp=collapse&title=Collapse%20%E6%8A%98%E5%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `NvCollapseName \| NvCollapseName[]` | `() =&gt; []` |
-| `accordion` | `boolean` | `false` |
-| `border` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `NvCollapseName \| NvCollapseName[]` | `() =&gt; []` |
+| `accordion` | 是否开启手风琴模式（每次只展开一个面板） | `boolean` | `false` |
+| `border` | 是否显示边框 | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `value: NvCollapseName \| NvCollapseName[]` |
-| `change` | `value: NvCollapseName \| NvCollapseName[]` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `value: NvCollapseName \| NvCollapseName[]` |
+| `change` | 绑定值或选中项发生变化时触发 | `value: NvCollapseName \| NvCollapseName[]` |
 
 ### Slots
 
@@ -68,33 +68,36 @@ demoPath: "/pages/nova-demo/display?comp=collapse&title=Collapse%20%E6%8A%98%E5%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `name` | `NvCollapseName` | `''` |
-| `title` | `Numeric` | `''` |
-| `value` | `Numeric` | `''` |
-| `label` | `string` | `''` |
-| `icon` | `string` | `''` |
-| `is-link` | `boolean` | `true` |
-| `disabled` | `boolean` | `false` |
-| `readonly` | `boolean` | `false` |
-| `border` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `name` | 唯一标识符名称 | `NvCollapseName` | `''` |
+| `title` | 标题文案 | `Numeric` | `''` |
+| `value` | 右侧内容或当前展示值 | `Numeric` | `''` |
+| `label` | 标题/标签文本 | `string` | `''` |
+| `icon` | 图标名称或图片链接 | `string` | `''` |
+| `is-link` | 是否展示右侧箭头并开启点击反馈 | `boolean` | `true` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `readonly` | 是否为只读状态（不可编辑但保持正常展示样式） | `boolean` | `false` |
+| `border` | 是否显示边框 | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `icon` | 自定义 `icon` 区域内容 |
-| `title` | 自定义 `title` 区域内容 |
-| `label` | 自定义 `label` 区域内容 |
-| `value` | 自定义 `value` 区域内容 |
-| `right-icon` | 自定义 `right-icon` 区域内容 |
+| `icon` | 自定义图标内容 |
+| `title` | 自定义标题区域内容 |
+| `label` | 自定义标签文字区域 |
+| `value` | 自定义右侧内容区域 |
+| `right-icon` | 自定义右侧图标内容 |
 | `default` | 默认内容插槽 |
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`toggle()`、`expanded()`
+| 方法名 | 说明 |
+| --- | --- |
+| `toggle` | 切换展开/收起或选中/未选中状态 |
+| `expanded` | 当前折叠面板项的展开状态（只读响应式值） |
 
 </div>

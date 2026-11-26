@@ -34,30 +34,30 @@ demoPath: "/pages/nova-demo/business?comp=address-edit&title=AddressEdit%20%E5%9
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `area-list` | `NvAreaList` | `() =&gt; DEFAULT_AREA_LIST` |
-| `address-info` | `Partial&lt;NvAddressEditInfo&gt;` | `() =&gt; ({` |
-| `show-delete` | `boolean` | `-` |
-| `show-set-default` | `boolean` | `-` |
-| `show-area` | `boolean` | `-` |
-| `show-detail` | `boolean` | `-` |
-| `save-button-text` | `string` | `-` |
-| `delete-button-text` | `string` | `-` |
-| `is-saving` | `boolean` | `-` |
-| `is-deleting` | `boolean` | `-` |
-| `area-placeholder` | `string` | `-` |
-| `detail-maxlength` | `number` | `-` |
-| `custom-class` | `string` | `-` |
-| `custom-style` | `StyleInput` | `-` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `area-list` | 省市区数据列表（含 province_list / city_list / county_list） | `NvAreaList` | `() =&gt; DEFAULT_AREA_LIST` |
+| `address-info` | 收货地址初始信息对象 | `Partial&lt;NvAddressEditInfo&gt;` | `() =&gt; ({` |
+| `show-delete` | 是否显示删除按钮 | `boolean` | `-` |
+| `show-set-default` | 是否显示“设为默认”开关 | `boolean` | `-` |
+| `show-area` | 是否显示地区选择栏 | `boolean` | `-` |
+| `show-detail` | 是否显示详细地址栏 | `boolean` | `-` |
+| `save-button-text` | 保存按钮文字 | `string` | `-` |
+| `delete-button-text` | 删除按钮文字 | `string` | `-` |
+| `is-saving` | 保存按钮是否处于加载状态 | `boolean` | `-` |
+| `is-deleting` | 删除按钮是否处于加载状态 | `boolean` | `-` |
+| `area-placeholder` | 地区选择栏占位提示文字 | `string` | `-` |
+| `detail-maxlength` | 详细地址最大输入字数 | `number` | `-` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `-` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `-` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `save` | `info: NvAddressEditInfo` |
-| `delete` | `info: NvAddressEditInfo` |
-| `change-detail` | `value: string` |
-| `change-default` | `value: boolean` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `save` | 点击保存按钮时触发 | `info: NvAddressEditInfo` |
+| `delete` | 点击删除按钮或按键时触发 | `info: NvAddressEditInfo` |
+| `change-detail` | 修改详细地址内容时触发 | `value: string` |
+| `change-default` | 切换“设为默认”开关时触发 | `value: boolean` |
 
 </div>

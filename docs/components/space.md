@@ -41,15 +41,15 @@ demoPath: "/pages/nova-demo/basic?comp=space&title=Space%20%E9%97%B4%E8%B7%9D"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `direction` | `NvSpaceDirection` | `'horizontal'` |
-| `size` | `Numeric \| [Numeric, Numeric]` | `8` |
-| `align` | `NvSpaceAlign` | `''` |
-| `wrap` | `boolean` | `false` |
-| `fill` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `direction` | 间距方向，可选值为 horizontal / vertical | `NvSpaceDirection` | `'horizontal'` |
+| `size` | 间距大小（单位 px，支持传入数组 [水平, 垂直]） | `Numeric \| [Numeric, Numeric]` | `8` |
+| `align` | 交叉轴对齐方式 | `NvSpaceAlign` | `''` |
+| `wrap` | 子元素是否自动换行 | `boolean` | `false` |
+| `fill` | 是否让 Space 容器宽度占满父级 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 

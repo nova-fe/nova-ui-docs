@@ -39,24 +39,24 @@ demoPath: "/pages/nova-demo/form?comp=switch&title=Switch%20%E5%BC%80%E5%85%B3"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `unknown` | `false` |
-| `active-value` | `unknown` | `true` |
-| `inactive-value` | `unknown` | `false` |
-| `loading` | `boolean` | `false` |
-| `disabled` | `boolean` | `false` |
-| `size` | `Numeric` | `26` |
-| `active-color` | `string` | `''` |
-| `inactive-color` | `string` | `''` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `unknown` | `false` |
+| `active-value` | 打开状态时对应的绑定值 | `unknown` | `true` |
+| `inactive-value` | 关闭状态时对应的绑定值 | `unknown` | `false` |
+| `loading` | 是否显示为加载状态 | `boolean` | `false` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `size` | 尺寸大小 | `Numeric` | `26` |
+| `active-color` | 选中/激活状态的颜色 | `string` | `''` |
+| `inactive-color` | 未选中/未激活状态的颜色 | `string` | `''` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `value: unknown` |
-| `change` | `value: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `value: unknown` |
+| `change` | 绑定值或选中项发生变化时触发 | `value: unknown` |
 
 </div>

@@ -41,37 +41,39 @@ demoPath: "/pages/nova-demo/form?comp=checkbox&title=Checkbox%20%E5%A4%8D%E9%80%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `boolean` | `false` |
-| `name` | `unknown` | `undefined` |
-| `shape` | `NvCheckboxShape` | `undefined` |
-| `disabled` | `boolean` | `undefined` |
-| `label-disabled` | `boolean` | `false` |
-| `label-position` | `'left' \| 'right'` | `'right'` |
-| `icon-size` | `Numeric` | `undefined` |
-| `checked-color` | `string` | `''` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `boolean` | `false` |
+| `name` | 复选框唯一标识符（在 CheckboxGroup 内必传） | `unknown` | `undefined` |
+| `shape` | 图标形状，可选值为 round / square | `NvCheckboxShape` | `undefined` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `undefined` |
+| `label-disabled` | 是否禁用文本区域点击切换选中状态 | `boolean` | `false` |
+| `label-position` | 文本位置，可选值为 left / right | `'left' \| 'right'` | `'right'` |
+| `icon-size` | 图标大小 | `Numeric` | `undefined` |
+| `checked-color` | 选中状态的颜色 | `string` | `''` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `value: boolean` |
-| `change` | `value: boolean` |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `value: boolean` |
+| `change` | 绑定值或选中项发生变化时触发 | `value: boolean` |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
 | `default` | 默认内容插槽 |
-| `icon` | 自定义 `icon` 区域内容 |
+| `icon` | 自定义图标内容 |
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`toggle()`
+| 方法名 | 说明 |
+| --- | --- |
+| `toggle` | 切换展开/收起或选中/未选中状态 |
 
 </div>
 
@@ -81,24 +83,24 @@ demoPath: "/pages/nova-demo/form?comp=checkbox&title=Checkbox%20%E5%A4%8D%E9%80%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `unknown[]` | `() =&gt; []` |
-| `disabled` | `boolean` | `false` |
-| `max` | `number` | `0` |
-| `direction` | `NvCheckboxGroupDirection` | `'vertical'` |
-| `icon-size` | `Numeric` | `20` |
-| `checked-color` | `string` | `''` |
-| `shape` | `NvCheckboxShape` | `'round'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `unknown[]` | `() =&gt; []` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `max` | 最大允许值或最大可选数量 | `number` | `0` |
+| `direction` | 排列或弹出方向 | `NvCheckboxGroupDirection` | `'vertical'` |
+| `icon-size` | 图标大小 | `Numeric` | `20` |
+| `checked-color` | 选中状态的颜色 | `string` | `''` |
+| `shape` | 组件形状（如 round / square） | `NvCheckboxShape` | `'round'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `value: unknown[]` |
-| `change` | `value: unknown[]` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `value: unknown[]` |
+| `change` | 绑定值或选中项发生变化时触发 | `value: unknown[]` |
 
 ### Slots
 
@@ -108,6 +110,8 @@ demoPath: "/pages/nova-demo/form?comp=checkbox&title=Checkbox%20%E5%A4%8D%E9%80%
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`toggleAll()`
+| 方法名 | 说明 |
+| --- | --- |
+| `toggleAll` | 全选、反选或取消全选复选框组内的所有选项 |
 
 </div>

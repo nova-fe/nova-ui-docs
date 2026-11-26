@@ -310,6 +310,13 @@ body {
   color: #455a64;
   border-bottom: 1px solid #f2f3f5;
   vertical-align: top;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.nv-doc-card td:first-child,
+.nv-doc-card th:first-child {
+  white-space: nowrap;
 }
 
 .nv-doc-card tr:last-child td {

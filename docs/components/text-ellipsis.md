@@ -37,31 +37,33 @@ demoPath: "/pages/nova-demo/display?comp=text-ellipsis&title=TextEllipsis%20%E6%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `content` | `string` | `''` |
-| `rows` | `Numeric` | `1` |
-| `expand-text` | `string` | `'展开'` |
-| `collapse-text` | `string` | `'收起'` |
-| `dots` | `string` | `'...'` |
-| `position` | `'end' \| 'start' \| 'middle'` | `'end'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `content` | 展示文本内容 | `string` | `''` |
+| `rows` | 展示的最大行数，超出后折叠显示省略号 | `Numeric` | `1` |
+| `expand-text` | 展开按钮文案 | `string` | `'展开'` |
+| `collapse-text` | 收起按钮文案 | `string` | `'收起'` |
+| `dots` | 文本省略号字符 | `string` | `'...'` |
+| `position` | 省略位置，可选值为 start / middle / end | `'end' \| 'start' \| 'middle'` | `'end'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click-action` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click-action` | 点击展开或收起操作按钮时触发 | `event: unknown` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `action` | 自定义 `action` 区域内容 |
+| `action` | 自定义右侧操作按钮区域内容 |
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`toggle()`
+| 方法名 | 说明 |
+| --- | --- |
+| `toggle` | 切换展开/收起或选中/未选中状态 |
 
 </div>

@@ -41,20 +41,20 @@ demoPath: "/pages/nova-demo/basic?comp=layout&title=Layout%20%E5%B8%83%E5%B1%80"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `gutter` | `Numeric \| [Numeric, Numeric]` | `0` |
-| `justify` | `NvRowJustify` | `'start'` |
-| `align` | `NvRowAlign` | `'top'` |
-| `wrap` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `gutter` | 子元素之间的间距 | `Numeric \| [Numeric, Numeric]` | `0` |
+| `justify` | 主轴对齐方式 | `NvRowJustify` | `'start'` |
+| `align` | 交叉轴对齐方式 | `NvRowAlign` | `'top'` |
+| `wrap` | 子元素是否自动换行 | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 
@@ -70,18 +70,18 @@ demoPath: "/pages/nova-demo/basic?comp=layout&title=Layout%20%E5%B8%83%E5%B1%80"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `span` | `Numeric` | `24` |
-| `offset` | `Numeric` | `0` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `span` | 栅格列元素占据的列数（总计 24 列） | `Numeric` | `24` |
+| `offset` | 栅格左侧间隔的列数 | `Numeric` | `0` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 

@@ -34,22 +34,22 @@ demoPath: "/pages/nova-demo/navigation?comp=back-top&title=BackTop%20%E8%BF%94%E
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `right` | `Numeric` | `30` |
-| `bottom` | `Numeric` | `40` |
-| `offset` | `Numeric` | `200` |
-| `scroll-top` | `number` | `0` |
-| `z-index` | `Numeric` | `100` |
-| `duration` | `number` | `300` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `right` | 距离页面右侧的偏移距离 | `Numeric` | `30` |
+| `bottom` | 距离页面底部的偏移距离 | `Numeric` | `40` |
+| `offset` | 滚动高度达到此阈值时显示返回顶部按钮（单位 px） | `Numeric` | `200` |
+| `scroll-top` | 当前页面滚动位置（单位 px） | `number` | `0` |
+| `z-index` | 组件层级 z-index | `Numeric` | `100` |
+| `duration` | 动画或展示持续时长 | `number` | `300` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 

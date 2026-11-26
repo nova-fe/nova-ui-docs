@@ -36,27 +36,27 @@ demoPath: "/pages/nova-demo/feedback?comp=notify&title=Notify%20%E6%B6%88%E6%81%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `show` | `boolean` | `false` |
-| `type` | `NvNotifyType` | `'danger'` |
-| `message` | `Numeric` | `''` |
-| `duration` | `number` | `3000` |
-| `color` | `string` | `''` |
-| `background` | `string` | `''` |
-| `position` | `NvNotifyPosition` | `'top'` |
-| `z-index` | `number` | `3100` |
-| `safe-area-inset-top` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `show` | 是否显示组件（支持 v-model:show） | `boolean` | `false` |
+| `type` | 通知类型，可选值为 primary / success / warning / danger | `NvNotifyType` | `'danger'` |
+| `message` | 提示内容文案 | `Numeric` | `''` |
+| `duration` | 自动关闭延时（单位 ms），0 表示不会自动关闭 | `number` | `3000` |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `''` |
+| `background` | 背景色 | `string` | `''` |
+| `position` | 弹出位置，可选值为 top / bottom | `NvNotifyPosition` | `'top'` |
+| `z-index` | 组件层级 z-index | `number` | `3100` |
+| `safe-area-inset-top` | 是否开启顶部安全区适配 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:show` | `value: boolean` |
-| `click` | `event: unknown` |
-| `close` | `-` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:show` | 更新显示状态（v-model:show） | `value: boolean` |
+| `click` | 点击组件时触发 | `event: unknown` |
+| `close` | 关闭组件或弹层时触发 | `-` |
 
 ### Slots
 

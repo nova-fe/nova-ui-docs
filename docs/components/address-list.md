@@ -37,38 +37,38 @@ demoPath: "/pages/nova-demo/business?comp=address-list&title=AddressList%20%E5%9
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `Numeric` | `''` |
-| `list` | `NvAddressListItem[]` | `() =&gt; []` |
-| `disabled-list` | `NvAddressListItem[]` | `() =&gt; []` |
-| `disabled-text` | `string` | `''` |
-| `switchable` | `boolean` | `true` |
-| `add-button-text` | `string` | `'新增地址'` |
-| `default-tag-text` | `string` | `'默认'` |
-| `right-icon` | `string` | `'edit'` |
-| `fixed` | `boolean` | `false` |
-| `safe-area-inset-bottom` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `Numeric` | `''` |
+| `list` | 列表数据源数组 | `NvAddressListItem[]` | `() =&gt; []` |
+| `disabled-list` | 不可配送地址列表 | `NvAddressListItem[]` | `() =&gt; []` |
+| `disabled-text` | 不可配送地址区域提示文案 | `string` | `''` |
+| `switchable` | 是否允许切换选中地址 | `boolean` | `true` |
+| `add-button-text` | 底部新增按钮文案 | `string` | `'新增地址'` |
+| `default-tag-text` | 默认项标签文字 | `string` | `'默认'` |
+| `right-icon` | 右侧图标名称或图片链接 | `string` | `'edit'` |
+| `fixed` | 是否固定定位在顶部或底部 | `boolean` | `false` |
+| `safe-area-inset-bottom` | 是否开启底部安全区适配（iPhone X 等全面屏） | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `id: Numeric` |
-| `add` | `-` |
-| `edit` | `item: NvAddressListItem, index: number` |
-| `select` | `item: NvAddressListItem, index: number` |
-| `edit-disabled` | `item: NvAddressListItem, index: number` |
-| `select-disabled` | `item: NvAddressListItem, index: number` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `id: Numeric` |
+| `add` | 点击底部新增按钮时触发 | `-` |
+| `edit` | 点击编辑按钮时触发 | `item: NvAddressListItem, index: number` |
+| `select` | 选中某一项时触发 | `item: NvAddressListItem, index: number` |
+| `edit-disabled` | 点击不可配送地址的编辑按钮时触发 | `item: NvAddressListItem, index: number` |
+| `select-disabled` | 点击不可配送列表中的地址项时触发 | `item: NvAddressListItem, index: number` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `top` | 自定义 `top` 区域内容 |
-| `item-bottom` | 自定义 `item-bottom` 区域内容 |
+| `top` | 自定义顶部扩展区域 |
+| `item-bottom` | 自定义每个地址项底部扩展区域 |
 | `default` | 默认内容插槽 |
 
 </div>

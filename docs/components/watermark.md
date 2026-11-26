@@ -37,19 +37,19 @@ demoPath: "/pages/nova-demo/display?comp=watermark&title=Watermark%20%E6%B0%B4%E
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `content` | `string \| string[]` | `''` |
-| `width` | `number` | `100` |
-| `height` | `number` | `100` |
-| `z-index` | `number` | `100` |
-| `rotate` | `number` | `-22` |
-| `opacity` | `number` | `0.12` |
-| `full-page` | `boolean` | `false` |
-| `text-color` | `string` | `'#969799'` |
-| `gap-x` | `number` | `24` |
-| `gap-y` | `number` | `24` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `content` | 展示文本内容 | `string \| string[]` | `''` |
+| `width` | 组件宽度 | `number` | `100` |
+| `height` | 组件高度 | `number` | `100` |
+| `z-index` | 组件层级 z-index | `number` | `100` |
+| `rotate` | 水印旋转角度（单位 deg） | `number` | `-22` |
+| `opacity` | 水印透明度（0 ~ 1） | `number` | `0.12` |
+| `full-page` | 水印是否全屏覆盖整个页面 | `boolean` | `false` |
+| `text-color` | 文字颜色 | `string` | `'#969799'` |
+| `gap-x` | 水印水平间距（单位 px） | `number` | `24` |
+| `gap-y` | 水印垂直间距（单位 px） | `number` | `24` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 </div>

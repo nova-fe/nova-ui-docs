@@ -38,26 +38,26 @@ demoPath: "/pages/nova-demo/display?comp=circle&title=Circle%20%E7%8E%AF%E5%BD%A
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `current-rate` | `number` | `undefined` |
-| `rate` | `number` | `100` |
-| `size` | `Numeric` | `100` |
-| `color` | `string` | `'#1989fa'` |
-| `layer-color` | `string` | `'#ebedf0'` |
-| `fill` | `string` | `'none'` |
-| `text` | `string` | `''` |
-| `stroke-width` | `Numeric` | `40` |
-| `clockwise` | `boolean` | `true` |
-| `speed` | `number` | `0` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `current-rate` | 当前实时进度（支持 v-model:current-rate） | `number` | `undefined` |
+| `rate` | 目标进度百分比（0 ~ 100） | `number` | `100` |
+| `size` | 尺寸大小 | `Numeric` | `100` |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `'#1989fa'` |
+| `layer-color` | 环形进度条轨道底色 | `string` | `'#ebedf0'` |
+| `fill` | 环形内部填充颜色 | `string` | `'none'` |
+| `text` | 展示文字内容 | `string` | `''` |
+| `stroke-width` | 进度条粗细 | `Numeric` | `40` |
+| `clockwise` | 是否按顺时针方向增长进度 | `boolean` | `true` |
+| `speed` | 动画速度（Circular 进度速度或 NoticeBar 滚动速率 px/s） | `number` | `0` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:currentRate` | `value: number` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:currentRate` | 实时同步环形进度条当前进度（v-model:current-rate） | `value: number` |
 
 ### Slots
 

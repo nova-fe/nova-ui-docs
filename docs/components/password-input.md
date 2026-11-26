@@ -32,22 +32,22 @@ demoPath: "/pages/nova-demo/form?comp=password-input&title=PasswordInput%20%E5%A
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `value` | `string` | `''` |
-| `info` | `string` | `''` |
-| `error-info` | `string` | `''` |
-| `length` | `Numeric` | `6` |
-| `gutter` | `Numeric` | `0` |
-| `mask` | `boolean` | `true` |
-| `focused` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `value` | 右侧内容或当前展示值 | `string` | `''` |
+| `info` | 密码输入框下方的辅助提示文字 | `string` | `''` |
+| `error-info` | 密码输入框下方的错误提示文案 | `string` | `''` |
+| `length` | 密码最大长度（格子数量） | `Numeric` | `6` |
+| `gutter` | 子元素之间的间距 | `Numeric` | `0` |
+| `mask` | 是否隐藏密码输入内容（显示为黑点） | `boolean` | `true` |
+| `focused` | 是否处于聚焦状态（聚焦时显示光标闪烁动画） | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `focus` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `focus` | 输入框聚焦时触发 | `event: unknown` |
 
 </div>

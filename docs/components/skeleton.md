@@ -42,26 +42,26 @@ demoPath: "/pages/nova-demo/display?comp=skeleton&title=Skeleton%20%E9%AA%A8%E6%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `title` | `boolean` | `false` |
-| `title-width` | `Numeric` | `'40%'` |
-| `row` | `number` | `3` |
-| `row-width` | `Numeric \| Numeric[]` | `'100%'` |
-| `avatar` | `boolean` | `false` |
-| `avatar-size` | `Numeric` | `32` |
-| `avatar-shape` | `'round' \| 'square'` | `'round'` |
-| `loading` | `boolean` | `true` |
-| `animate` | `boolean` | `true` |
-| `round` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `title` | 标题文案 | `boolean` | `false` |
+| `title-width` | 骨架屏标题占位宽度 | `Numeric` | `'40%'` |
+| `row` | 段落占位图行数 | `number` | `3` |
+| `row-width` | 段落占位图宽度（支持字符串或每行宽度数组） | `Numeric \| Numeric[]` | `'100%'` |
+| `avatar` | 是否显示头像占位图 | `boolean` | `false` |
+| `avatar-size` | 头像占位图尺寸 | `Numeric` | `32` |
+| `avatar-shape` | 头像占位图形状，可选值为 round / square | `'round' \| 'square'` | `'round'` |
+| `loading` | 是否显示为加载状态 | `boolean` | `true` |
+| `animate` | 是否开启骨架屏闪烁动画 | `boolean` | `true` |
+| `round` | 是否为圆角样式 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `template` | 自定义 `template` 区域内容 |
+| `template` | 自定义骨架屏内部布局模板 |
 | `default` | 默认内容插槽 |
 
 </div>
@@ -72,12 +72,12 @@ demoPath: "/pages/nova-demo/display?comp=skeleton&title=Skeleton%20%E9%AA%A8%E6%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `title-width` | `Numeric` | `'40%'` |
-| `round` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `title-width` | 骨架屏标题占位宽度 | `Numeric` | `'40%'` |
+| `round` | 是否为圆角样式 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 </div>
 
@@ -87,13 +87,13 @@ demoPath: "/pages/nova-demo/display?comp=skeleton&title=Skeleton%20%E9%AA%A8%E6%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `row` | `number` | `3` |
-| `row-width` | `Numeric \| Numeric[]` | `'100%'` |
-| `round` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `row` | 段落占位图行数 | `number` | `3` |
+| `row-width` | 段落占位图宽度（支持字符串或每行宽度数组） | `Numeric \| Numeric[]` | `'100%'` |
+| `round` | 是否为圆角样式 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 </div>
 
@@ -103,12 +103,12 @@ demoPath: "/pages/nova-demo/display?comp=skeleton&title=Skeleton%20%E9%AA%A8%E6%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `avatar-size` | `Numeric` | `32` |
-| `avatar-shape` | `'round' \| 'square'` | `'round'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `avatar-size` | 头像占位图尺寸 | `Numeric` | `32` |
+| `avatar-shape` | 头像占位图形状，可选值为 round / square | `'round' \| 'square'` | `'round'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 </div>
 
@@ -118,11 +118,11 @@ demoPath: "/pages/nova-demo/display?comp=skeleton&title=Skeleton%20%E9%AA%A8%E6%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `image-size` | `Numeric` | `96` |
-| `image-shape` | `'square' \| 'round'` | `'square'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `image-size` | 图片尺寸 | `Numeric` | `96` |
+| `image-shape` | 图片占位图形状，可选值为 square / round | `'square' \| 'round'` | `'square'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 </div>

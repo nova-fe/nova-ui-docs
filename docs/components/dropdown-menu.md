@@ -35,16 +35,16 @@ demoPath: "/pages/nova-demo/feedback?comp=dropdown-menu&title=DropdownMenu%20%E4
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `active-color` | `string` | `'#1989fa'` |
-| `direction` | `NvDropdownDirection` | `'down'` |
-| `z-index` | `number` | `10` |
-| `duration` | `number` | `200` |
-| `overlay` | `boolean` | `true` |
-| `close-on-click-overlay` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `active-color` | 选中/激活状态的颜色 | `string` | `'#1989fa'` |
+| `direction` | 菜单展开方向，可选值为 down / up | `NvDropdownDirection` | `'down'` |
+| `z-index` | 组件层级 z-index | `number` | `10` |
+| `duration` | 动画或展示持续时长 | `number` | `200` |
+| `overlay` | 是否显示背景遮罩层 | `boolean` | `true` |
+| `close-on-click-overlay` | 点击遮罩层时是否自动关闭 | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 
@@ -54,7 +54,9 @@ demoPath: "/pages/nova-demo/feedback?comp=dropdown-menu&title=DropdownMenu%20%E4
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`close()`
+| 方法名 | 说明 |
+| --- | --- |
+| `close` | 收起下拉菜单或关闭滑动单元格 |
 
 </div>
 
@@ -64,24 +66,24 @@ demoPath: "/pages/nova-demo/feedback?comp=dropdown-menu&title=DropdownMenu%20%E4
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `Numeric` | `''` |
-| `title` | `string` | `''` |
-| `options` | `NvDropdownOption[]` | `() =&gt; []` |
-| `disabled` | `boolean` | `false` |
-| `title-class` | `string` | `''` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `Numeric` | `''` |
+| `title` | 标题文案 | `string` | `''` |
+| `options` | 可选项数据源数组 | `NvDropdownOption[]` | `() =&gt; []` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `title-class` | 标题自定义类名 | `string` | `''` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `value: Numeric` |
-| `change` | `value: Numeric` |
-| `open` | `-` |
-| `close` | `-` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `value: Numeric` |
+| `change` | 绑定值或选中项发生变化时触发 | `value: Numeric` |
+| `open` | 打开弹层、下拉菜单或滑动单元格时触发 | `-` |
+| `close` | 关闭组件或弹层时触发 | `-` |
 
 ### Slots
 
@@ -91,6 +93,8 @@ demoPath: "/pages/nova-demo/feedback?comp=dropdown-menu&title=DropdownMenu%20%E4
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`toggle()`
+| 方法名 | 说明 |
+| --- | --- |
+| `toggle` | 切换展开/收起或选中/未选中状态 |
 
 </div>

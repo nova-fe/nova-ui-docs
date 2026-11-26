@@ -45,22 +45,22 @@ demoPath: "/pages/nova-demo/business?comp=coupon&title=Coupon%20%E4%BC%98%E6%83%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `title` | `string` | `'优惠券'` |
-| `coupons` | `NvCouponInfo[]` | `() =&gt; []` |
-| `chosen-coupon` | `number` | `-1` |
-| `editable` | `boolean` | `true` |
-| `border` | `boolean` | `true` |
-| `currency` | `string` | `'¥'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `title` | 标题文案 | `string` | `'优惠券'` |
+| `coupons` | 可用优惠券列表 | `NvCouponInfo[]` | `() =&gt; []` |
+| `chosen-coupon` | 当前选中优惠券的索引，-1 表示未选中 | `number` | `-1` |
+| `editable` | 是否可编辑/可点击进入选择 | `boolean` | `true` |
+| `border` | 是否显示边框 | `boolean` | `true` |
+| `currency` | 货币符号（默认 ¥） | `string` | `'¥'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 </div>
 
@@ -70,32 +70,32 @@ demoPath: "/pages/nova-demo/business?comp=coupon&title=Coupon%20%E4%BC%98%E6%83%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `coupons` | `NvCouponInfo[]` | `() =&gt; []` |
-| `disabled-coupons` | `NvCouponInfo[]` | `() =&gt; []` |
-| `chosen-coupon` | `number` | `-1` |
-| `code` | `string` | `''` |
-| `enabled-title` | `string` | `'可用'` |
-| `disabled-title` | `string` | `'不可用'` |
-| `exchange-button-text` | `string` | `'兑换'` |
-| `exchange-button-disabled` | `boolean` | `false` |
-| `exchange-button-loading` | `boolean` | `false` |
-| `close-button-text` | `string` | `'不使用优惠'` |
-| `input-placeholder` | `string` | `'请输入优惠码'` |
-| `show-exchange-bar` | `boolean` | `true` |
-| `show-close-button` | `boolean` | `true` |
-| `show-count` | `boolean` | `true` |
-| `currency` | `string` | `'¥'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `coupons` | 可用优惠券列表 | `NvCouponInfo[]` | `() =&gt; []` |
+| `disabled-coupons` | 不可用优惠券列表 | `NvCouponInfo[]` | `() =&gt; []` |
+| `chosen-coupon` | 当前选中优惠券的索引，-1 表示未选中 | `number` | `-1` |
+| `code` | 兑换码输入框的绑定值（支持 v-model:code） | `string` | `''` |
+| `enabled-title` | 可用优惠券标签页标题 | `string` | `'可用'` |
+| `disabled-title` | 不可用优惠券标签页标题 | `string` | `'不可用'` |
+| `exchange-button-text` | 兑换按钮文字 | `string` | `'兑换'` |
+| `exchange-button-disabled` | 是否禁用兑换按钮 | `boolean` | `false` |
+| `exchange-button-loading` | 兑换按钮是否显示加载状态 | `boolean` | `false` |
+| `close-button-text` | 关闭/完成按钮文字 | `string` | `'不使用优惠'` |
+| `input-placeholder` | 兑换码输入框占位提示文字 | `string` | `'请输入优惠码'` |
+| `show-exchange-bar` | 是否展示顶部优惠码兑换栏 | `boolean` | `true` |
+| `show-close-button` | 是否显示底部“不使用优惠券”关闭按钮 | `boolean` | `true` |
+| `show-count` | 是否在标签栏标题中显示优惠券数量 | `boolean` | `true` |
+| `currency` | 货币符号（默认 ¥） | `string` | `'¥'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `change` | `index: number` |
-| `exchange` | `code: string` |
-| `update:code` | `code: string` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `change` | 绑定值或选中项发生变化时触发 | `index: number` |
+| `exchange` | 点击优惠券兑换按钮时触发 | `code: string` |
+| `update:code` | 更新兑换码输入值（v-model:code） | `code: string` |
 
 </div>

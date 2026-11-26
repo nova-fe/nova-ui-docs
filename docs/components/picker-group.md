@@ -42,25 +42,25 @@ demoPath: "/pages/nova-demo/form?comp=picker-group&title=PickerGroup%20%E9%80%89
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `title` | `string` | `''` |
-| `tabs` | `string[]` | `() =&gt; []` |
-| `next-step-text` | `string` | `''` |
-| `confirm-button-text` | `string` | `'确认'` |
-| `cancel-button-text` | `string` | `'取消'` |
-| `active-tab` | `number` | `0` |
-| `show-toolbar` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `title` | 标题文案 | `string` | `''` |
+| `tabs` | 选择器组各步骤的标签标题数组 | `string[]` | `() =&gt; []` |
+| `next-step-text` | 多步选择器中“下一步”按钮文字 | `string` | `''` |
+| `confirm-button-text` | 确认按钮文字 | `string` | `'确认'` |
+| `cancel-button-text` | 取消按钮文字 | `string` | `'取消'` |
+| `active-tab` | 当前激活的标签页索引（支持 v-model:active-tab） | `number` | `0` |
+| `show-toolbar` | 是否显示顶部操作栏（含取消、标题、确认按钮） | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:activeTab` | `value: number` |
-| `confirm` | `values: NvPickerConfirmEvent[]` |
-| `cancel` | `values: NvPickerConfirmEvent[]` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:activeTab` | 更新当前激活标签页索引（v-model:active-tab） | `value: number` |
+| `confirm` | 点击确认按钮时触发 | `values: NvPickerConfirmEvent[]` |
+| `cancel` | 点击取消按钮时触发 | `values: NvPickerConfirmEvent[]` |
 
 ### Slots
 

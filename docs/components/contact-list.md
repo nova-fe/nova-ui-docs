@@ -32,24 +32,24 @@ demoPath: "/pages/nova-demo/business?comp=contact-list&title=ContactList%20%E8%8
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `Numeric` | `''` |
-| `list` | `NvContactListItem[]` | `() =&gt; []` |
-| `add-text` | `string` | `'新建联系人'` |
-| `default-tag-text` | `string` | `'默认'` |
-| `fixed` | `boolean` | `false` |
-| `safe-area-inset-bottom` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `Numeric` | `''` |
+| `list` | 列表数据源数组 | `NvContactListItem[]` | `() =&gt; []` |
+| `add-text` | 新增联系人按钮文案 | `string` | `'新建联系人'` |
+| `default-tag-text` | 默认项标签文字 | `string` | `'默认'` |
+| `fixed` | 是否固定定位在顶部或底部 | `boolean` | `false` |
+| `safe-area-inset-bottom` | 是否开启底部安全区适配（iPhone X 等全面屏） | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `id: Numeric` |
-| `add` | `-` |
-| `edit` | `item: NvContactListItem, index: number` |
-| `select` | `item: NvContactListItem, index: number` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `id: Numeric` |
+| `add` | 点击底部新增按钮时触发 | `-` |
+| `edit` | 点击编辑按钮时触发 | `item: NvContactListItem, index: number` |
+| `select` | 选中某一项时触发 | `item: NvContactListItem, index: number` |
 
 </div>

@@ -52,45 +52,48 @@ demoPath: "/pages/nova-demo/form?comp=calendar&title=Calendar%20%E6%97%A5%E5%8E%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `show` | `boolean` | `false` |
-| `type` | `NvCalendarType` | `'single'` |
-| `title` | `string` | `'日期选择'` |
-| `color` | `string` | `''` |
-| `min-date` | `NvCalendarDateInput` | `undefined` |
-| `max-date` | `NvCalendarDateInput` | `undefined` |
-| `default-date` | `NvCalendarDateInput \| NvCalendarDateInput[] \| null` | `undefined` |
-| `confirm-text` | `string` | `'确定'` |
-| `confirm-disabled-text` | `string` | `'确定'` |
-| `poppable` | `boolean` | `true` |
-| `round` | `boolean` | `true` |
-| `position` | `NvPopupPosition` | `'bottom'` |
-| `show-confirm` | `boolean` | `true` |
-| `first-day-of-week` | `number` | `0` |
-| `show-title` | `boolean` | `true` |
-| `show-subtitle` | `boolean` | `true` |
-| `show-mark` | `boolean` | `true` |
-| `show-lunar` | `boolean` | `false` |
-| `show-festival` | `boolean` | `true` |
-| `close-on-click-overlay` | `boolean` | `true` |
-| `safe-area-inset-bottom` | `boolean` | `true` |
-| `allow-same-day` | `boolean` | `false` |
-| `max-range` | `number` | `0` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `show` | 是否显示组件（支持 v-model:show） | `boolean` | `false` |
+| `type` | 日历选择类型，可选值为 single（单选）/ multiple（多选）/ range（区间） | `NvCalendarType` | `'single'` |
+| `title` | 标题文案 | `string` | `'日期选择'` |
+| `color` | 主题色，对底部确认按钮和选中日期生效 | `string` | `''` |
+| `min-date` | 可选择的最小日期下限 | `NvCalendarDateInput` | `undefined` |
+| `max-date` | 可选择的最小/最大日期上限 | `NvCalendarDateInput` | `undefined` |
+| `default-date` | 默认选中的日期或日期数组 | `NvCalendarDateInput \| NvCalendarDateInput[] \| null` | `undefined` |
+| `confirm-text` | 确认按钮文字 | `string` | `'确定'` |
+| `confirm-disabled-text` | 确认按钮处于禁用状态时的文字 | `string` | `'确定'` |
+| `poppable` | 是否以弹层形式展示，设为 false 时平铺直接渲染 | `boolean` | `true` |
+| `round` | 是否为圆角样式 | `boolean` | `true` |
+| `position` | 弹出位置，可选值为 bottom / top / right / left | `NvPopupPosition` | `'bottom'` |
+| `show-confirm` | 是否展示底部确认按钮 | `boolean` | `true` |
+| `first-day-of-week` | 设置周起始日，0 表示周日、1 表示周一，依此类推 | `number` | `0` |
+| `show-title` | 是否展示顶部标题 | `boolean` | `true` |
+| `show-subtitle` | 是否展示日历副标题（当前年月与干支生肖） | `boolean` | `true` |
+| `show-mark` | 是否显示月份背景水印 | `boolean` | `true` |
+| `show-lunar` | 是否在日历中显示农历日期、传统节日与二十四节气 | `boolean` | `false` |
+| `show-festival` | 是否在日历单元格中展示传统节日与二十四节气 | `boolean` | `true` |
+| `close-on-click-overlay` | 点击遮罩层时是否自动关闭 | `boolean` | `true` |
+| `safe-area-inset-bottom` | 是否开启底部安全区适配（iPhone X 等全面屏） | `boolean` | `true` |
+| `allow-same-day` | 日期范围选择时是否允许起止日期为同一天 | `boolean` | `false` |
+| `max-range` | 日期区间最多可选天数 | `number` | `0` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:show` | `value: boolean` |
-| `select` | `value: Date \| Date[]` |
-| `confirm` | `value: Date \| Date[]` |
-| `close` | `-` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:show` | 更新显示状态（v-model:show） | `value: boolean` |
+| `select` | 选中某一项时触发 | `value: Date \| Date[]` |
+| `confirm` | 点击确认按钮时触发 | `value: Date \| Date[]` |
+| `close` | 关闭组件或弹层时触发 | `-` |
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`reset()`、`getSelectedDate()`
+| 方法名 | 说明 |
+| --- | --- |
+| `reset` | 重置组件状态（重置日历选中、倒计时或翻滚文本） |
+| `getSelectedDate` | 获取日历当前已选中的日期或日期数组 |
 
 </div>

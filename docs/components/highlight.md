@@ -34,15 +34,15 @@ demoPath: "/pages/nova-demo/display?comp=highlight&title=Highlight%20%E9%AB%98%E
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `keywords` | `string \| string[]` | `''` |
-| `source-string` | `string` | `''` |
-| `case-sensitive` | `boolean` | `false` |
-| `auto-escape` | `boolean` | `true` |
-| `highlight-class` | `string` | `''` |
-| `unhighlight-class` | `string` | `''` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `keywords` | 需要高亮匹配的关键词（支持单个字符串或数组） | `string \| string[]` | `''` |
+| `source-string` | 需要高亮处理的原始文本内容 | `string` | `''` |
+| `case-sensitive` | 高亮匹配是否区分大小写 | `boolean` | `false` |
+| `auto-escape` | 是否自动转义关键词中的正则特殊字符 | `boolean` | `true` |
+| `highlight-class` | 高亮匹配文本的自定义类名 | `string` | `''` |
+| `unhighlight-class` | 非高亮文本的自定义类名 | `string` | `''` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 </div>

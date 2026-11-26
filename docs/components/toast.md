@@ -36,24 +36,24 @@ demoPath: "/pages/nova-demo/basic?comp=toast&title=Toast%20%E8%BD%BB%E6%8F%90%E7
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `show` | `boolean` | `false` |
-| `type` | `NvToastType` | `'text'` |
-| `message` | `Numeric` | `''` |
-| `position` | `NvToastPosition` | `'middle'` |
-| `duration` | `number` | `2000` |
-| `forbid-click` | `boolean` | `false` |
-| `icon` | `string` | `''` |
-| `z-index` | `number` | `3000` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `show` | 是否显示组件（支持 v-model:show） | `boolean` | `false` |
+| `type` | 提示类型，可选值为 text / loading / success / fail | `NvToastType` | `'text'` |
+| `message` | 提示内容文案 | `Numeric` | `''` |
+| `position` | 展示位置，可选值为 middle / top / bottom | `NvToastPosition` | `'middle'` |
+| `duration` | 自动关闭延时（单位 ms），0 表示不会自动关闭 | `number` | `2000` |
+| `forbid-click` | 展示轻提示时是否禁止背景点击穿透 | `boolean` | `false` |
+| `icon` | 图标名称或图片链接 | `string` | `''` |
+| `z-index` | 组件层级 z-index | `number` | `3000` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:show` | `value: boolean` |
-| `close` | `-` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:show` | 更新显示状态（v-model:show） | `value: boolean` |
+| `close` | 关闭组件或弹层时触发 | `-` |
 
 </div>

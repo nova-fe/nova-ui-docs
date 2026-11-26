@@ -39,12 +39,12 @@ demoPath: "/pages/nova-demo/basic?comp=config-provider&title=ConfigProvider%20%E
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `theme` | `NvThemeMode` | `'light'` |
-| `theme-vars` | `NvThemeVars` | `undefined` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `theme` | 全局或局部主题模式，可选值为 light / dark | `NvThemeMode` | `'light'` |
+| `theme-vars` | 自定义 CSS 主题变量对象（Design Tokens 覆写） | `NvThemeVars` | `undefined` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 

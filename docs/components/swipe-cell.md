@@ -37,34 +37,37 @@ demoPath: "/pages/nova-demo/feedback?comp=swipe-cell&title=SwipeCell%20%E6%BB%91
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `name` | `Numeric` | `''` |
-| `left-width` | `Numeric` | `0` |
-| `right-width` | `Numeric` | `0` |
-| `disabled` | `boolean` | `false` |
-| `before-close` | `(detail: NvSwipeCellCloseDetail) =&gt; boolean \| Promise&lt;boolean&gt;` | `undefined` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `name` | 唯一标识符名称 | `Numeric` | `''` |
+| `left-width` | 指定左侧滑动区域宽度（单位 px） | `Numeric` | `0` |
+| `right-width` | 指定右侧滑动区域宽度（单位 px） | `Numeric` | `0` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `before-close` | 关闭前的异步回调函数，返回 false 可阻止关闭 | `(detail: NvSwipeCellCloseDetail) =&gt; boolean \| Promise&lt;boolean&gt;` | `undefined` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `open` | `detail: { name: Numeric; position: NvSwipeCellSide }` |
-| `close` | `detail: NvSwipeCellCloseDetail` |
-| `click` | `position: NvSwipeCellPosition` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `open` | 打开弹层、下拉菜单或滑动单元格时触发 | `detail: { name: Numeric; position: NvSwipeCellSide }` |
+| `close` | 关闭组件或弹层时触发 | `detail: NvSwipeCellCloseDetail` |
+| `click` | 点击组件时触发 | `position: NvSwipeCellPosition` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `left` | 自定义 `left` 区域内容 |
+| `left` | 自定义左侧区域内容 |
 | `default` | 默认内容插槽 |
-| `right` | 自定义 `right` 区域内容 |
+| `right` | 自定义右侧区域内容 |
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`open()`、`close()`
+| 方法名 | 说明 |
+| --- | --- |
+| `open` | 展开滑动单元格左侧或右侧操作区 |
+| `close` | 收起下拉菜单或关闭滑动单元格 |
 
 </div>

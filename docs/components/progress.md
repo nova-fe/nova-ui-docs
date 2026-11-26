@@ -36,18 +36,18 @@ demoPath: "/pages/nova-demo/display?comp=progress&title=Progress%20%E8%BF%9B%E5%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `percentage` | `Numeric` | `0` |
-| `stroke-width` | `Numeric` | `4` |
-| `color` | `string` | `''` |
-| `track-color` | `string` | `''` |
-| `pivot-text` | `string` | `''` |
-| `pivot-color` | `string` | `''` |
-| `text-color` | `string` | `'#ffffff'` |
-| `inactive` | `boolean` | `false` |
-| `show-pivot` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `percentage` | 进度百分比（0 ~ 100） | `Numeric` | `0` |
+| `stroke-width` | 进度条粗细 | `Numeric` | `4` |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `''` |
+| `track-color` | 进度条轨道背景色 | `string` | `''` |
+| `pivot-text` | 进度条文字内容，默认显示当前百分比 | `string` | `''` |
+| `pivot-color` | 进度文字气泡背景色 | `string` | `''` |
+| `text-color` | 文字颜色 | `string` | `'#ffffff'` |
+| `inactive` | 是否置灰进度条 | `boolean` | `false` |
+| `show-pivot` | 是否显示进度文字气泡 | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 </div>

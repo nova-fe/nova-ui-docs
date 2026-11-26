@@ -37,13 +37,13 @@ demoPath: "/pages/nova-demo/navigation?comp=action-bar&title=ActionBar%20%E5%8A%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `safe-area-inset-bottom` | `boolean` | `true` |
-| `placeholder` | `boolean` | `false` |
-| `z-index` | `Numeric` | `100` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `safe-area-inset-bottom` | 是否开启底部安全区适配（iPhone X 等全面屏） | `boolean` | `true` |
+| `placeholder` | 固定在底部时，是否在底部生成一个等高的占位元素 | `boolean` | `false` |
+| `z-index` | 组件层级 z-index | `Numeric` | `100` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 
@@ -59,27 +59,27 @@ demoPath: "/pages/nova-demo/navigation?comp=action-bar&title=ActionBar%20%E5%8A%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `text` | `string` | `''` |
-| `icon` | `string` | `''` |
-| `color` | `string` | `''` |
-| `dot` | `boolean` | `false` |
-| `badge` | `Numeric` | `undefined` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `text` | 展示文字内容 | `string` | `''` |
+| `icon` | 图标名称或图片链接 | `string` | `''` |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `''` |
+| `dot` | 是否显示右上角小红点 | `boolean` | `false` |
+| `badge` | 图标右上角徽标内容 | `Numeric` | `undefined` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `icon` | 自定义 `icon` 区域内容 |
+| `icon` | 自定义图标内容 |
 | `default` | 默认内容插槽 |
 
 </div>
@@ -90,22 +90,22 @@ demoPath: "/pages/nova-demo/navigation?comp=action-bar&title=ActionBar%20%E5%8A%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `type` | `NvActionBarButtonType` | `'danger'` |
-| `text` | `string` | `''` |
-| `color` | `string` | `''` |
-| `icon` | `string` | `''` |
-| `disabled` | `boolean` | `false` |
-| `loading` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `type` | 组件类型样式 | `NvActionBarButtonType` | `'danger'` |
+| `text` | 展示文字内容 | `string` | `''` |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `''` |
+| `icon` | 图标名称或图片链接 | `string` | `''` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `loading` | 是否显示为加载状态 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 

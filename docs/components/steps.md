@@ -36,23 +36,23 @@ demoPath: "/pages/nova-demo/display?comp=steps&title=Steps%20%E6%AD%A5%E9%AA%A4%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `active` | `Numeric` | `0` |
-| `direction` | `'horizontal' \| 'vertical'` | `'horizontal'` |
-| `active-color` | `string` | `'#07c160'` |
-| `inactive-color` | `string` | `'#969799'` |
-| `active-icon` | `string` | `'checked'` |
-| `inactive-icon` | `string` | `''` |
-| `finish-icon` | `string` | `''` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `active` | 当前激活项的索引或名称 | `Numeric` | `0` |
+| `direction` | 排列或弹出方向 | `'horizontal' \| 'vertical'` | `'horizontal'` |
+| `active-color` | 选中/激活状态的颜色 | `string` | `'#07c160'` |
+| `inactive-color` | 未选中/未激活状态的颜色 | `string` | `'#969799'` |
+| `active-icon` | 当前步骤对应的激活状态图标名称 | `string` | `'checked'` |
+| `inactive-icon` | 未激活状态步骤对应的图标名称 | `string` | `''` |
+| `finish-icon` | 已完成步骤对应的图标名称 | `string` | `''` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click-step` | `index: number` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click-step` | 点击步骤条某一步骤时触发 | `index: number` |
 
 ### Slots
 
@@ -68,10 +68,10 @@ demoPath: "/pages/nova-demo/display?comp=steps&title=Steps%20%E6%AD%A5%E9%AA%A4%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 

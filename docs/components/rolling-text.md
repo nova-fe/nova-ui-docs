@@ -37,20 +37,23 @@ demoPath: "/pages/nova-demo/display?comp=rolling-text&title=RollingText%20%E7%BF
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `start-num` | `number` | `0` |
-| `target-num` | `number` | `0` |
-| `text-list` | `string[]` | `() =&gt; []` |
-| `duration` | `number` | `2` |
-| `auto-start` | `boolean` | `true` |
-| `direction` | `'up' \| 'down'` | `'down'` |
-| `height` | `number` | `40` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `start-num` | 翻滚起始数字 | `number` | `0` |
+| `target-num` | 翻滚目标数字 | `number` | `0` |
+| `text-list` | 自定义翻滚文本内容数组 | `string[]` | `() =&gt; []` |
+| `duration` | 动画或展示持续时长 | `number` | `2` |
+| `auto-start` | 是否自动开始 | `boolean` | `true` |
+| `direction` | 排列或弹出方向 | `'up' \| 'down'` | `'down'` |
+| `height` | 组件高度 | `number` | `40` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### 方法（Expose）
 
-通过 `ref` 可调用：`start()`、`reset()`
+| 方法名 | 说明 |
+| --- | --- |
+| `start` | 开始运行（启动倒计时或翻滚文本动画） |
+| `reset` | 重置组件状态（重置日历选中、倒计时或翻滚文本） |
 
 </div>

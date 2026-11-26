@@ -38,33 +38,33 @@ demoPath: "/pages/nova-demo/navigation?comp=nav-bar&title=NavBar%20%E5%AF%BC%E8%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `title` | `string` | `''` |
-| `left-text` | `string` | `''` |
-| `right-text` | `string` | `''` |
-| `left-arrow` | `boolean` | `false` |
-| `border` | `boolean` | `true` |
-| `fixed` | `boolean` | `false` |
-| `placeholder` | `boolean` | `false` |
-| `z-index` | `Numeric` | `100` |
-| `safe-area-inset-top` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `title` | 标题文案 | `string` | `''` |
+| `left-text` | 导航栏左侧文案 | `string` | `''` |
+| `right-text` | 导航栏右侧文案 | `string` | `''` |
+| `left-arrow` | 是否显示导航栏左侧返回箭头 | `boolean` | `false` |
+| `border` | 是否显示边框 | `boolean` | `true` |
+| `fixed` | 是否固定定位在顶部或底部 | `boolean` | `false` |
+| `placeholder` | 固定在顶部时，是否在标签位置生成一个等高的占位元素 | `boolean` | `false` |
+| `z-index` | 组件层级 z-index | `Numeric` | `100` |
+| `safe-area-inset-top` | 是否开启顶部安全区适配 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click-left` | `event: unknown` |
-| `click-right` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click-left` | 点击导航栏左侧区域时触发 | `event: unknown` |
+| `click-right` | 点击导航栏右侧区域时触发 | `event: unknown` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `left` | 自定义 `left` 区域内容 |
-| `title` | 自定义 `title` 区域内容 |
-| `right` | 自定义 `right` 区域内容 |
+| `left` | 自定义左侧区域内容 |
+| `title` | 自定义标题区域内容 |
+| `right` | 自定义右侧区域内容 |
 
 </div>

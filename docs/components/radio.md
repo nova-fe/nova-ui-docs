@@ -38,30 +38,30 @@ demoPath: "/pages/nova-demo/form?comp=radio&title=Radio%20%E5%8D%95%E9%80%89%E6%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `name` | `unknown` | `undefined` |
-| `shape` | `NvRadioShape` | `undefined` |
-| `disabled` | `boolean` | `undefined` |
-| `label-disabled` | `boolean` | `false` |
-| `label-position` | `'left' \| 'right'` | `'right'` |
-| `icon-size` | `Numeric` | `undefined` |
-| `checked-color` | `string` | `''` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `name` | 单选框唯一标识符 | `unknown` | `undefined` |
+| `shape` | 图标形状，可选值为 round / square | `NvRadioShape` | `undefined` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `undefined` |
+| `label-disabled` | 是否禁用文本区域点击切换选中状态 | `boolean` | `false` |
+| `label-position` | 文本位置，可选值为 left / right | `'left' \| 'right'` | `'right'` |
+| `icon-size` | 图标大小 | `Numeric` | `undefined` |
+| `checked-color` | 选中状态的颜色 | `string` | `''` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
 | `default` | 默认内容插槽 |
-| `icon` | 自定义 `icon` 区域内容 |
+| `icon` | 自定义图标内容 |
 
 </div>
 
@@ -71,23 +71,23 @@ demoPath: "/pages/nova-demo/form?comp=radio&title=Radio%20%E5%8D%95%E9%80%89%E6%
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `unknown` | `''` |
-| `disabled` | `boolean` | `false` |
-| `direction` | `NvRadioGroupDirection` | `'vertical'` |
-| `icon-size` | `Numeric` | `20` |
-| `checked-color` | `string` | `''` |
-| `shape` | `NvRadioShape` | `'round'` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `unknown` | `''` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `direction` | 排列或弹出方向 | `NvRadioGroupDirection` | `'vertical'` |
+| `icon-size` | 图标大小 | `Numeric` | `20` |
+| `checked-color` | 选中状态的颜色 | `string` | `''` |
+| `shape` | 组件形状（如 round / square） | `NvRadioShape` | `'round'` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `value: unknown` |
-| `change` | `value: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `value: unknown` |
+| `change` | 绑定值或选中项发生变化时触发 | `value: unknown` |
 
 ### Slots
 

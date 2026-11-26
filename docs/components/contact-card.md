@@ -34,20 +34,20 @@ demoPath: "/pages/nova-demo/business?comp=contact-card&title=ContactCard%20%E8%8
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `type` | `NvContactCardType` | `'add'` |
-| `name` | `string` | `''` |
-| `tel` | `string` | `''` |
-| `add-text` | `string` | `'添加联系人'` |
-| `editable` | `boolean` | `true` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `type` | 卡片类型，可选值为 add（添加联系人）/ edit（编辑联系人） | `NvContactCardType` | `'add'` |
+| `name` | 联系人姓名 | `string` | `''` |
+| `tel` | 联系人手机号 | `string` | `''` |
+| `add-text` | 新增联系人按钮文案 | `string` | `'添加联系人'` |
+| `editable` | 是否可编辑/可点击进入选择 | `boolean` | `true` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `click` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `click` | 点击组件时触发 | `event: unknown` |
 
 </div>

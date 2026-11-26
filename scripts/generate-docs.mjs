@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 import fs from 'node:fs'
 import path from 'node:path'
+import { getPropDesc, getEventDesc, getSlotDesc, getExposeDesc } from './api-descriptions.mjs'
 
 const DOCS_ROOT = path.resolve(process.cwd(), 'docs')
 const NOVA_ROOT = process.env.NOVA_UI_ROOT || path.resolve(process.cwd(), '../nova')
 const COMPONENTS_DIR = path.join(NOVA_ROOT, 'uni_modules/nova-ui/components')
 const DEMO_DIR = path.join(NOVA_ROOT, 'playground/pages/nova-demo')
+const missingReport = { props: new Set(), events: new Set(), slots: new Set(), exposes: new Set() }
 
 export const CATALOG = [
   {
@@ -320,10 +322,14 @@ function renderComponentDoc(cat, item) {
     if (parsed.props.length > 0) {
       lines.push('### Props')
       lines.push('')
-      lines.push('| 参数 | 类型 | 默认值 |')
-      lines.push('| --- | --- | --- |')
+      lines.push('| 参数 | 说明 | 类型 | 默认值 |')
+      lines.push('| --- | --- | --- | --- |')
       for (const p of parsed.props) {
-        lines.push(`| \`${p.name}\` | \`${escapeMdCell(p.type)}\` | \`${escapeMdCell(p.defaultVal)}\` |`)
+        const desc = getPropDesc(parsed.compName, p.name)
+        if (!desc) missingReport.props.add(`${parsed.compName}.${p.name}`)
+        lines.push(
+          `| \`${p.name}\` | ${escapeMdCell(desc || '-')} | \`${escapeMdCell(p.type)}\` | \`${escapeMdCell(p.defaultVal)}\` |`
+        )
       }
       lines.push('')
     }
@@ -331,10 +337,12 @@ function renderComponentDoc(cat, item) {
     if (parsed.events.length > 0) {
       lines.push('### Events')
       lines.push('')
-      lines.push('| 事件名 | 回调参数 |')
-      lines.push('| --- | --- |')
+      lines.push('| 事件名 | 说明 | 回调参数 |')
+      lines.push('| --- | --- | --- |')
       for (const ev of parsed.events) {
-        lines.push(`| \`${ev.name}\` | \`${escapeMdCell(ev.params)}\` |`)
+        const desc = getEventDesc(ev.name)
+        if (!desc) missingReport.events.add(`${parsed.compName}.${ev.name}`)
+        lines.push(`| \`${ev.name}\` | ${escapeMdCell(desc || '-')} | \`${escapeMdCell(ev.params)}\` |`)
       }
       lines.push('')
     }
@@ -345,7 +353,9 @@ function renderComponentDoc(cat, item) {
       lines.push('| 插槽名 | 说明 |')
       lines.push('| --- | --- |')
       for (const sl of parsed.slots) {
-        lines.push(`| \`${sl}\` | ${sl === 'default' ? '默认内容插槽' : `自定义 \`${sl}\` 区域内容`} |`)
+        const desc = getSlotDesc(sl)
+        if (!desc) missingReport.slots.add(`${parsed.compName}.${sl}`)
+        lines.push(`| \`${sl}\` | ${escapeMdCell(desc || `自定义 ${sl} 区域内容`)} |`)
       }
       lines.push('')
     }
@@ -353,7 +363,13 @@ function renderComponentDoc(cat, item) {
     if (parsed.exposes.length > 0) {
       lines.push('### 方法（Expose）')
       lines.push('')
-      lines.push(`通过 \`ref\` 可调用：${parsed.exposes.map((e) => `\`${e}()\``).join('、')}`)
+      lines.push('| 方法名 | 说明 |')
+      lines.push('| --- | --- |')
+      for (const ex of parsed.exposes) {
+        const desc = getExposeDesc(ex)
+        if (!desc) missingReport.exposes.add(`${parsed.compName}.${ex}`)
+        lines.push(`| \`${ex}\` | ${escapeMdCell(desc || '-')} |`)
+      }
       lines.push('')
     }
 
@@ -411,6 +427,22 @@ export const CATALOG_GROUPS: CatalogGroup[] = ${JSON.stringify(
 `
   fs.writeFileSync(metaPath, metaContent, 'utf8')
   console.log(`[nova-docs] Generated ${count} component docs and catalog.ts`)
+  const missingTotal =
+    missingReport.props.size +
+    missingReport.events.size +
+    missingReport.slots.size +
+    missingReport.exposes.size
+  console.log(
+    `[nova-docs] Missing Chinese descriptions: props=${missingReport.props.size}, events=${missingReport.events.size}, slots=${missingReport.slots.size}, exposes=${missingReport.exposes.size}`
+  )
+  if (missingTotal > 0) {
+    console.warn('[nova-docs] Missing items:', {
+      props: [...missingReport.props],
+      events: [...missingReport.events],
+      slots: [...missingReport.slots],
+      exposes: [...missingReport.exposes]
+    })
+  }
 }
 
 main()

@@ -39,17 +39,17 @@ demoPath: "/pages/nova-demo/display?comp=badge&title=Badge%20%E5%BE%BD%E6%A0%87"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `content` | `Numeric` | `undefined` |
-| `color` | `string` | `''` |
-| `dot` | `boolean` | `false` |
-| `max` | `Numeric` | `undefined` |
-| `show-zero` | `boolean` | `true` |
-| `position` | `NvBadgePosition` | `'top-right'` |
-| `offset` | `[Numeric, Numeric]` | `undefined` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `content` | 展示文本内容 | `Numeric` | `undefined` |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `''` |
+| `dot` | 是否显示右上角小红点 | `boolean` | `false` |
+| `max` | 最大允许值或最大可选数量 | `Numeric` | `undefined` |
+| `show-zero` | 当徽标内容为数字 0 时是否展示 | `boolean` | `true` |
+| `position` | 徽标定位角，可选值为 top-right / top-left / bottom-right / bottom-left | `NvBadgePosition` | `'top-right'` |
+| `offset` | 设置徽标位置偏移量 [x, y] | `[Numeric, Numeric]` | `undefined` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 

@@ -38,16 +38,16 @@ demoPath: "/pages/nova-demo/feedback?comp=loading&title=Loading%20%E5%8A%A0%E8%B
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `color` | `string` | `'#c8c9cc'` |
-| `size` | `Numeric` | `24` |
-| `text` | `string` | `''` |
-| `text-size` | `Numeric` | `14` |
-| `text-color` | `string` | `''` |
-| `vertical` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `color` | 颜色值（支持十六进制、RGB 及主题色） | `string` | `'#c8c9cc'` |
+| `size` | 加载图标大小 | `Numeric` | `24` |
+| `text` | 展示文字内容 | `string` | `''` |
+| `text-size` | 文字大小 | `Numeric` | `14` |
+| `text-color` | 文字颜色 | `string` | `''` |
+| `vertical` | 是否为垂直方向排列/滑动 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Slots
 

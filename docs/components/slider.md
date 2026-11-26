@@ -37,38 +37,38 @@ demoPath: "/pages/nova-demo/form?comp=slider&title=Slider%20%E6%BB%91%E5%9D%97"
 
 ### Props
 
-| 参数 | 类型 | 默认值 |
-| --- | --- | --- |
-| `model-value` | `NvSliderValue` | `0` |
-| `min` | `number` | `0` |
-| `max` | `number` | `100` |
-| `step` | `number` | `1` |
-| `bar-height` | `Numeric` | `2` |
-| `button-size` | `Numeric` | `24` |
-| `active-color` | `string` | `''` |
-| `inactive-color` | `string` | `''` |
-| `range` | `boolean` | `false` |
-| `disabled` | `boolean` | `false` |
-| `readonly` | `boolean` | `false` |
-| `vertical` | `boolean` | `false` |
-| `custom-class` | `string` | `''` |
-| `custom-style` | `StyleInput` | `''` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| `model-value` | 当前绑定值（支持 v-model） | `NvSliderValue` | `0` |
+| `min` | 最小允许值 | `number` | `0` |
+| `max` | 最大允许值或最大可选数量 | `number` | `100` |
+| `step` | 每次增减变化的步长 | `number` | `1` |
+| `bar-height` | 进度条高度 | `Numeric` | `2` |
+| `button-size` | 按钮尺寸 | `Numeric` | `24` |
+| `active-color` | 选中/激活状态的颜色 | `string` | `''` |
+| `inactive-color` | 未选中/未激活状态的颜色 | `string` | `''` |
+| `range` | 是否开启双滑块范围选择模式 | `boolean` | `false` |
+| `disabled` | 是否禁用当前组件 | `boolean` | `false` |
+| `readonly` | 是否为只读状态（不可编辑但保持正常展示样式） | `boolean` | `false` |
+| `vertical` | 是否为垂直方向排列/滑动 | `boolean` | `false` |
+| `custom-class` | 自定义根节点额外类名 | `string` | `''` |
+| `custom-style` | 自定义根节点内联样式 | `StyleInput` | `''` |
 
 ### Events
 
-| 事件名 | 回调参数 |
-| --- | --- |
-| `update:modelValue` | `value: NvSliderValue` |
-| `change` | `value: NvSliderValue` |
-| `drag-start` | `event: unknown` |
-| `drag-end` | `event: unknown` |
+| 事件名 | 说明 | 回调参数 |
+| --- | --- | --- |
+| `update:modelValue` | 更新组件绑定值（v-model） | `value: NvSliderValue` |
+| `change` | 绑定值或选中项发生变化时触发 | `value: NvSliderValue` |
+| `drag-start` | 开始拖动滑块时触发 | `event: unknown` |
+| `drag-end` | 结束拖动滑块时触发 | `event: unknown` |
 
 ### Slots
 
 | 插槽名 | 说明 |
 | --- | --- |
-| `left-button` | 自定义 `left-button` 区域内容 |
-| `button` | 自定义 `button` 区域内容 |
-| `right-button` | 自定义 `right-button` 区域内容 |
+| `left-button` | 自定义双滑块左侧滑块按钮 |
+| `button` | 自定义按钮区域内容 |
+| `right-button` | 自定义双滑块右侧滑块按钮 |
 
 </div>
