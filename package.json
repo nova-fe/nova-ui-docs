@@ -1,0 +1,17 @@
+{
+  "name": "nova-ui-docs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "VuePress 2 documentation site for Nova UI (Vant 4 inspired 3-column layout with live mobile preview)",
+  "scripts": {
+    "docs:dev": "DOCS_BASE=/ vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:gen": "node scripts/generate-docs.mjs"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.33",
+    "@vuepress/theme-default": "^2.0.0-rc.142",
+    "vue": "^3.5.46",
+    "vuepress": "^2.0.0-rc.33"
+  }
+}
